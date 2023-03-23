@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    height: 100vh;
+    background-color: rgba(200, 255, 0, 0.705);
+    color: rgb(0, 0, 0);
+    background-image:url( 1.png);
+    background-repeat:;
+    background-size:cover;
+
+}
+h1{
+    background-color: rgba(255, 136, 0, 0.562);
+    padding: 1vw;
+    color: rgb(0, 0, 0);
+    text-align: center ;
+ 
+    
+}
+h2{
+   text-align: center;
+}
+
+pre{ 
+    text-align: center; text-align:justify;
+}
+nav{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: #002aff;
+    text-align: center;
+}
+.cont-ul{
+    display: flex;
+    align-items: center;
+    background-color: #37eb00a2;
+    color: rgba(0, 0, 0, 0.747);
+    text-align: center;
+}
+li{
+    list-style: none ;
+    cursor: pointer;
+    padding: 1.5vw;
+   transition:all 1s ease 0s;
+   text-align: center;
+
+}
+li:hover{
+    background-color: rgba(110, 131, 17, 0.11);
+}
+.divelop{ 
+    text-align: center;
+}
+.develop>li:hover{
+    background-color: rgba(255, 208, 0, 0.685);
+    display: none;
+}
+.ul-second{
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+    
+}
+.ul-second>li{
+    width: 182px;
+    transform: translate(-20px);
+    border-bottom: solid 1px #000000;
+    text-align: center;
+    background-color: rgba(255, 166, 0, 0.678);
+}
+.ul-second>li:hover{
+    background-color: rgba(226, 43, 43, 0.753);
+}
+.develop:hover>.ul-second{
+    display: block;
+}
+.ul-third{
+    position: absolute;
+    transform: translate(100%);
+    right: 55;
+    top:100%;
+    display: none;
+    background-color: #002aff;
+}
+.ul-third>li{
+    padding: 1.5vw;
+    border-bottom: solid 1px #fff ;
+
+}
+.front:hover>.ul-third{
+    display: block;
+}
+@media(max-widht:900px){
+    .logo-REINOANIMALCODEX{
+     display: none;   
+    }
+}
+.cont{
+    display: flex;
+    width:100%;
+    height: 60%;
+    padding: 4% 1%;
+    box-sizing: border-box;
+}
+.box{
+    flex: 50;
+    margin: 5px;
+    line-height: 1;
+    box-shadow: 0 20px 30px rgb(255, 166, 0);
+    overflow:hidden;
+}
+.box>img{
+    width: 100%;
+    height: calc(100% - 5vh);
+    object-fit: cover;
+}
+.box>span{
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    height: 1vh;
+    line-height: 1;
+}
+.box:hover{
+    flex: 30%;
+}
+.box:hover>img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    target="_blank"
+}
