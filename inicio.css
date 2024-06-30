@@ -1,0 +1,24 @@
+.start_btn button {
+    font-size: 25px;
+    font-weight: 500;
+    color: #003298;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.start_btn button:hover {
+    background-color: #003298;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

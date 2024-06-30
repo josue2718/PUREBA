@@ -1,0 +1,76 @@
+
+/* Estilos para el cuadro de información */
+.info_box {
+    width: 540px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.300s ease;
+}
+/*linea*/
+.info_box .info-title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid darkcyan;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #170a92;
+    color: #fff;
+}
+
+.info_box .info-list {
+    padding: 15px 30px;
+}
+
+.info_box .info-list .info {
+    margin: 5px 0;
+    font-size: 17px;
+}
+/*texto tiempo*/
+.info_box .info-list .info span {
+    font-weight: 600;
+    color: #170a92;
+}
+/*linea abajo*/
+.info_box .info-buttons {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid #170a92;
+}
+/*botones*/
+.info_box .info-buttons button {
+    margin: 0 5px;
+    height: 60px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #000037;
+    transition: all 0.3s ease;
+}
+
+.info-buttons button.restart {
+    color: #ffffff;
+    background: #170a92;
+}
+
+.info-buttons button.restart:hover {
+    background: #3967ff;
+}
+
+.info-buttons button.quit {
+    color: #ffffff;
+    background: #170a92;
+}
+
+.info-buttons button.quit:hover {
+    background: #3967ff;
+}

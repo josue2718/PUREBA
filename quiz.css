@@ -1,0 +1,244 @@
+.quiz_box {
+    width: 550px;
+    background: #170a92;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+/*Arriba del cuestionario*/
+.quiz_box header {
+    position: relative;
+    z-index: 2;
+    color: #fdfdfd;
+    height: 70px;
+    padding: 0 30px;
+    background: #170a92;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(255, 255, 255, 0.1);
+}
+/*preguntas*/
+.quiz_box header .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+/*caja del tiempo restante*/
+.quiz_box header .timer {
+    color: #000000;
+    background: #6bb2ff;
+    border: 1px solid #000000;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+}
+
+.quiz_box header .timer .time_left_txt {
+    font-weight: 400;
+    font-size: 17px;
+
+}
+/*cajita del tiempo*/
+.quiz_box header .timer .timer_sec {
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width: 45px;
+    color: #ffffff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #190c97;
+    border: 1px solid #343a40;
+    user-select: none;
+}
+/*cajita del tiempo*/
+.quiz_box header .time_line {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #ffffff;
+}
+section {
+    padding: 25px 30px 20px 30px;
+    background: #ffffff;
+}
+
+section .que_text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+section .option_list {
+    padding: 20px 0px;
+
+}
+section .option_list_2 {
+    padding: 20px 0px;
+
+}
+
+.option_list .option .icon.cross {
+    color: #a42834;
+    background: #f8d7da;
+    border-color: #a42834;
+}
+.option_list_2 .option .icon.cross {
+    color: #a42834;
+    background: #f8d7da;
+    border-color: #a42834;
+}
+
+.option_list .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.option_list_2 .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+/* Botones de respuesta */
+.option_list button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #070707;
+    background: #fdfdfd;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+.option_list_2 button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.option_list button:hover {
+    background: #220adb;
+    color: #fdfdfd;
+}
+
+
+footer{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+
+footer .total_que span{
+    display: flex;
+    user-select: none;
+}
+
+footer .total_que span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+footer .total_que span p:first-child{
+    padding-left: 0px;
+}
+
+footer button{
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background: #007bff;
+    border: 1px solid #007bff;
+    line-height: 10px;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+footer button:hover{
+    background: #0263ca;
+}
+
+footer button.show{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.ninguna {
+    background-color: rgb(252, 118, 118);
+    color: white;
+}
+.correct::before {
+    content: '✔';
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+}
+
+.incorrect::before {
+    content: '✖';
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+}
+.ninguna::before {
+    content: '✖';
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+}
+/* No need to change color if correct */
+.correct {
+    background-color: rgb(66, 156, 66);
+    color: white;
+}
+
+/* Change color only if incorrect */
+.incorrect {
+    background-color: rgb(247, 120, 120);
+    color: white;
+}
+
+.time_bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0;
+    height: 10px;
+}
+
+.time_progress {
+    height: 100%;
+    background: #190c97;
+    width: 100%;
+    transition: width 0.5s linear;
+}
